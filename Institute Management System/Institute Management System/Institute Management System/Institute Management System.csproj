@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B44907FA-CA10-4AE9-B51B-C6A2FD1C579D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Institute_Management_System</RootNamespace>
+    <AssemblyName>Institute Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Microsoft.Office.Interop.Access, Version=9.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Interop.Access.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Test_Website\Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Test_Website\Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Test_Website\Bin\Microsoft.Practices.ObjectBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="encrypter.cs" />
+    <Compile Include="frmaddnewcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaddnewcourse.Designer.cs">
+      <DependentUpon>frmaddnewcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadminlogin.Designer.cs">
+      <DependentUpon>frmadminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcoursedetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcoursedetails.Designer.cs">
+      <DependentUpon>frmcoursedetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfirstinstalfees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfirstinstalfees.Designer.cs">
+      <DependentUpon>frmfirstinstalfees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprintslip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprintslip.Designer.cs">
+      <DependentUpon>frmprintslip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsecondinstallment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsecondinstallment.Designer.cs">
+      <DependentUpon>frmsecondinstallment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstart.Designer.cs">
+      <DependentUpon>frmstart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstudentfeedetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstudentfeedetails.Designer.cs">
+      <DependentUpon>frmstudentfeedetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentregister.Designer.cs">
+      <DependentUpon>frmStudentregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentReport.Designer.cs">
+      <DependentUpon>frmStudentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmupdatecourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmupdatecourse.Designer.cs">
+      <DependentUpon>frmupdatecourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logic.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmaddnewcourse.resx">
+      <DependentUpon>frmaddnewcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadminlogin.resx">
+      <DependentUpon>frmadminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcoursedetails.resx">
+      <DependentUpon>frmcoursedetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfirstinstalfees.resx">
+      <DependentUpon>frmfirstinstalfees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprintslip.resx">
+      <DependentUpon>frmprintslip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsecondinstallment.resx">
+      <DependentUpon>frmsecondinstallment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstart.resx">
+      <DependentUpon>frmstart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstudentfeedetails.resx">
+      <DependentUpon>frmstudentfeedetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentregister.resx">
+      <DependentUpon>frmStudentregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentReport.resx">
+      <DependentUpon>frmStudentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmupdatecourse.resx">
+      <DependentUpon>frmupdatecourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
